@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>롯데시네마 코딩</title>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/63c5ea7601.js" crossorigin="anonymous"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- 배너 -->
+  <div id="top_banner_wrapper">
+    <div id="top_banner"> <!-- 리스트에 넣고 랜덤으로 뜨게 -->
+      <img src="./lotteCinema_img/banner/A_Man_of_Reason_banner.jpg">
+      <span>&times</span>
+    </div>
+  </div>
+
+  <!-- 헤더(상단, 상단아래줄) -->
+  <header>
+    <div id="gnb_wrap">
+      <div id="logo"><a href="./index.html"><img src="lotteCinema_img/logo/logo.png"></a></div>
+      
+      <div id="gnb">
+        <ul id="gnb_sns">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i>페이스북</a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube"></i>유튜브</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></i>인스타그램</a></li>
+        </ul>
+        <ul id="gnb_login">
+          <li><a href="./login.html">로그인</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="nav">
+      <ul id="m_menu">
+        <li>
+          <a href="./rev.html">예매</a>
+          <ul class="drop">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">빠른예매</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./des.html">영화</a>
+          <ul class="drop">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">현재상영작</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./des.html">관람평</a>
+          <ul class="drop">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">관람평</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <ul id="r_menu">
+        <li><a href="#"><i class="fa-regular fa-user"></i>회원가입</a></li>
+        <li><a href="#"><i class="fa-solid fa-ticket"></i>바로 예매</a></li>
+        <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="slideshow_wrap"> <!--그라데이션-->
+      
+      <div id="slideshow_box_wrap">
+        <div class="slideshow_box">
+          <img src="./lotteCinema_img/bgimg/A_Man_of_Reason_bgimg.jpg">
+          
+          <div class="playbttn"><i class="fa-solid fa-play"></i></div>
+          
+          <div class="teaser_wrap">
+            <span>&times</span>
+            <div class="teaser_box">
+              <video src="./lotteCinema_img/teaser/A_Man_of_Reason_1280720.mp4" controls></video>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slideshow_box">
+          <img src="./lotteCinema_img/bgimg/Concrete_Utopia_bgimg.jpg">
+          
+          <div class="playbttn"><i class="fa-solid fa-play"></i></div>
+          
+          <div class="teaser_wrap">
+            <span>&times</span>
+            <div class="teaser_box">
+              <video src="./lotteCinema_img/teaser/Concrete_Utopia_1280720.mp4" controls></video>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slideshow_box">
+          <img src="./lotteCinema_img/bgimg/MonsterFamily2_bgimg.jpg">
+          
+          <div class="playbttn"><i class="fa-solid fa-play"></i></div>
+          
+          <div class="teaser_wrap">
+            <span>&times</span>
+            <div class="teaser_box">
+              <video src="./lotteCinema_img/teaser/MonsterFamily2_1280720.mp4" controls></video>
+            </div>
+          </div>
+        </div>
+
+        <div class="slideshow_box">
+          <img src="./lotteCinema_img/bgimg/Ransomed_bgimg.jpg">
+          
+          <div class="playbttn"><i class="fa-solid fa-play"></i></div>
+          
+          <div class="teaser_wrap">
+            <span>&times</span>
+            <div class="teaser_box">
+              <video src="./lotteCinema_img/teaser/Ransomed_1280720.mp4" controls></video>
+            </div>
+          </div>
+        </div>
+
+        <div class="control">
+          <p class="dot" onclick="currentSlide(0)"></p>
+          <p class="dot" onclick="currentSlide(1)"></p>
+          <p class="dot" onclick="currentSlide(2)"></p>
+          <p class="dot" onclick="currentSlide(3)"></p>
+          <p class="dot2 dot_play "><i class="fa-solid fa-play"></i></p>
+          <p class="dot2 dot_pause "><i class="fa-solid fa-square"></i></p>
+        </div>
+      </div>
+
+      <div class="arrow">
+        <div class="prev" onclick="moveSlides(-1)">&#10094;</div>
+        <div class="next" onclick="moveSlides(1)">&#10095;</div>
+      </div>
+    </section>
+
+    <section id="poster_wrap">
+      <div id="poster_box_wrap">
+
+        <!-- slide wrapper -->
+        <div id="poster_slide_wrapper">
+          <!-- slides -->
+          <div id="poster_slides"> 
+            <div class="poster_box">
+              <div class="poster"> 
+                <img src="./lotteCinema_img/poster/A_Man_of_Reason_poster.jpg">
+                
+                <span>1</span>
+                <div class="over_info">
+                  <button>예매하기</button>
+                  <button>상세정보</button>
+                </div>
+              </div>
+              
+              <div class="bottom_info">
+                <h2><span class="num num_15">15</span>영화제목</h2>
+                <p><span>예매율 0.1%</span><span><i class="fa-solid fa-star" style="color: #ffbb00;"></i>7.5</span></p>
+              </div>
+            </div>
+            
+            <div class="poster_box">
+              <div class="poster"> 
+                <img src="./lotteCinema_img/poster/Barbie_poster.jpg">
+                
+                <span>2</span>
+                <div class="over_info">
+                  <button>예매하기</button>
+                  <button>상세정보</button>
+                </div>
+              </div>
+              
+              <div class="bottom_info">
+                <p><span>15</span>영화제목</p>
+                <p><span>예매율 0.1%</span><span><i class="fa-solid fa-star"></i>7.5</span></p>
+              </div>
+            </div>
+            <div class="poster_box">
+              <div class="poster"> <!--15개-->
+                <img src="./lotteCinema_img/poster/Concrete_Utopia_poster.jpg">
+                
+                <span>3</span>
+                <div class="over_info">
+                  <button>예매하기</button>
+                  <button>상세정보</button>
+                </div>
+              </div>
+              
+              <div class="bottom_info">
+                <p><span>15</span>영화제목</p>
+                <p><span>예매율 0.1%</span><span><i class="fa-solid fa-star"></i>7.5</span></p>
+              </div>
+            </div>
+            <div class="poster_box">
+              <div class="poster"> <!--15개-->
+                <img src="./lotteCinema_img/poster/Elemental_poster.jpg">
+                
+                <span>4</span>
+                <div class="over_info">
+                  <button>예매하기</button>
+                  <button>상세정보</button>
+                </div>
+              </div>
+              
+              <div class="bottom_info">
+                <p><span>15</span>영화제목</p>
+                <p><span>예매율 0.1%</span><span><i class="fa-solid fa-star"></i>7.5</span></p>
+              </div>
+            </div>
+            <div class="poster_box">
+              <div class="poster"> <!--15개-->
+                <img src="./lotteCinema_img/poster/HoneySweet_poster.jpg">
+                
+                <span>5</span>
+                <div class="over_info">
+                  <button>예매하기</button>
+                  <button>상세정보</button>
+                </div>
+              </div>
+              
+              <div class="bottom_info">
+                <p><span>15</span>영화제목</p>
+                <p><span>예매율 0.1%</span><span><i class="fa-solid fa-star"></i>7.5</span></p>
+              </div>
+            </div>
+            <div class="poster_box">
+              <div class="poster"> 
+                <img src="./lotteCinema_img/poster/Jujutsu_Kaisen_poster.jpg">
+                
+                <span>6</span>
+                <div class="over_info">
+                  <button>예매하기</button>
+                  <button>상세정보</button>
+                </div>
+              </div>
+              
+              <div class="bottom_info">
+                <p><span>15</span>영화제목</p>
+                <p><span>예매율 0.1%</span><span><i class="fa-solid fa-star"></i>7.5</span></p>
+              </div>
+            </div>
+            <div class="poster_box">
+              <div class="poster"> 
+                <img src="./lotteCinema_img/poster/Mission_Impossible_poster.jpg">
+                
+                <span>7</span>
+                <div class="over_info">
+                  <button>예매하기</button>
+                  <button>상세정보</button>
+                </div>
+              </div>
+              
+              <div class="bottom_info">
+                <p><span>15</span>영화제목</p>
+                <p><span>예매율 0.1%</span><span><i class="fa-solid fa-star"></i>7.5</span></p>
+              </div>
+            </div> <!--7번-->
+            <div class="poster_box">
+              <div class="poster"> 
+                <img src="./lotteCinema_img/poster/MonsterFamily2_poster.jpg">
+                
+                <span>8</span>
+                <div class="over_info">
+                  <button>예매하기</button>
+                  <button>상세정보</button>
+                </div>
+              </div>
+              
+              <div class="bottom_info">
+                <p><span>15</span>영화제목</p>
+                <p><span>예매율 0.1%</span><span><i class="fa-solid fa-star"></i>7.5</span></p>
+              </div>
+            </div> 
+            <div class="poster_box">
+              <div class="poster"> 
+                <img src="./lotteCinema_img/poster/Oppenheimer_poster.jpg">
+                
+                <span>9</span>
+                <div class="over_info">
+                  <button>예매하기</button>
+                  <button>상세정보</button>
+                </div>
+              </div>
+              
+              <div class="bottom_info">
+                <p><span>15</span>영화제목</p>
+                <p><span>예매율 0.1%</span><span><i class="fa-solid fa-star"></i>7.5</span></p>
+              </div>
+            </div>
+            <div class="poster_box">
+              <div class="poster"> 
+                <img src="./lotteCinema_img/poster/Ransomed_poster.jpg">
+                
+                <span>10</span>
+                <div class="over_info">
+                  <button>예매하기</button>
+                  <button>상세정보</button>
+                </div>
+              </div>
+              
+              <div class="bottom_info">
+                <p><span>15</span>영화제목</p>
+                <p><span>예매율 0.1%</span><span><i class="fa-solid fa-star"></i>7.5</span></p>
+              </div>
+            </div>
+            <div class="poster_box">
+              <div class="poster"> 
+                <img src="./lotteCinema_img/poster/SlamDunk_poster.jpg">
+                
+                <span>11</span>
+                <div class="over_info">
+                  <button>예매하기</button>
+                  <button>상세정보</button>
+                </div>
+              </div>
+              
+              <div class="bottom_info">
+                <p><span>15</span>영화제목</p>
+                <p><span>예매율 0.1%</span><span><i class="fa-solid fa-star"></i>7.5</span></p>
+              </div>
+            </div>
+            <div class="poster_box">
+              <div class="poster"> 
+                <img src="./lotteCinema_img/poster/Smugglers_poster.jpg">
+                
+                <span>12</span>
+                <div class="over_info">
+                  <button>예매하기</button>
+                  <button>상세정보</button>
+                </div>
+              </div>
+              
+              <div class="bottom_info">
+                <p><span>15</span>영화제목</p>
+                <p><span>예매율 0.1%</span><span><i class="fa-solid fa-star"></i>7.5</span></p>
+              </div>
+            </div> <!--12번-->
+          </div>
+        </div>
+
+        <div class="poster_arrow">
+          <div class="poster_arrow_prev">&#10094;</div>
+          <div class="poster_arrow_next">&#10095;</div>
+        </div>
+  
+        <div class="clock_wrapper">
+          <span><i class="fa-regular fa-clock"></i></span>
+          <span class="clock">시간</span>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <section id="event_point">
+    <article class="event">
+      <h2>이벤트</h2>
+      <div class="grid_wrapper">
+        <div class="event1">event1</div>
+        <div class="event2">event2</div>
+        <div class="event3">event3</div>
+        <div class="event4">event4</div>
+        <div class="event5">event5</div>
+        <div class="event6">event6</div>
+      </div>
+    </article>
+
+    <article class="point">
+      <div class="point1">
+        <p>아이콘</p>
+        <p>할인안내</p>
+      </div>
+      <div class="point2">
+        <p>아이콘</p>
+        <p>포인트</p>
+      </div>
+      <div class="point3">
+        <p>아이콘</p>
+        <p>멤버십</p>
+      </div>
+      <div class="point4">
+        <p>아이콘</p>
+        <p>틴틴클럽</p>
+      </div>
+      <div class="point5">
+        <p>아이콘</p>
+        <p>브라보클럽</p>
+      </div>
+    </article>
+  </section>
+
+  <div id="bottom_banner_wrapper">
+    <div id="bottom_banner">
+      <img src="./lotteCinema_img/bottom_banner/bottom_banner1.png">
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer_wrap">
+      <img src="./lotteCinema_img/logo/logo.png">
+      <ul>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이메일무단수집거부</a></li>
+        <li><a href="#">영상정보처리기기 운영 및 관리방침</a></li>
+        <li><a href="#">배정기준</a></li>
+        <li><a href="#">채용안내</a></li>
+        <li><a href="#">광고/임대문의</a></li>
+        <li><a href="#">사회적책임</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">서울특별시 송파구 올림픽로 300 롯데월드타워 27층</a></li>
+        <li><a href="#">고객센처 1544-8855(유료)</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./js/default.js"></script>
+  <script src="./js/js.js"></script>
+</body>
+</html>

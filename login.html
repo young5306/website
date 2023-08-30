@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/63c5ea7601.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/default2.css">
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+  <!-- 배너 -->
+  <div id="top_banner_wrapper">
+    <div id="top_banner"> <!-- 리스트에 넣고 랜덤으로 뜨게 -->
+      <img src="./lotteCinema_img/banner/A_Man_of_Reason_banner.jpg">
+      <span>&times</span>
+    </div>
+  </div>
+
+  <!-- 헤더(상단, 상단아래줄) -->
+  <header>
+    <div id="gnb_wrap">
+      <div id="logo"><a href="./index.html"><img src="lotteCinema_img/logo/logo.png"></a></div>
+      
+      <div id="gnb">
+        <ul id="gnb_sns">
+          <li><a href="#"><i class="fa-brands fa-facebook" style="color: #777777;"></i>페이스북</a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube" style="color: #777777;"></i>유튜브</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram" style="color: #777777;"></i></i>인스타그램</a></li>
+        </ul>
+        <ul id="gnb_login">
+          <li><a href="#">로그인</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="nav">
+      <ul id="m_menu">
+        <li>
+          <a href="./rev.html">예매</a>
+          <ul class="drop">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">빠른예매</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./des.html">영화</a>
+          <ul class="drop">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">현재상영작</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./des.html">관람평</a>
+          <ul class="drop">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">관람평</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <ul id="r_menu">
+        <li><a href="#"><i class="fa-regular fa-user"></i>회원가입</a></li>
+        <li><a href="#"><i class="fa-solid fa-ticket"></i>바로 예매</a></li>
+        <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!--login start-->
+
+  <main>
+    <section id="login">
+      <div class="tab_menu">
+
+        <ul class="list">
+          <li class="is_on">
+            <a href="#tab1" class="btn">로그인</a>
+          </li>
+          <li>
+            <a href="#tab2" class="btn">회원가입</a>
+          </li>
+        </ul>
+
+        <div class="cont_area">
+
+          <form action="#" id="tab1" class="cont" style="display:block;">
+            <div class="wrapper">
+              <div class="wrap">
+                <label for="userid"></label>
+                <input id="userid" class="box" type="text" placeholder="아이디 또는 이메일을 입력해 주세요."></input>
+                
+                <label for="pwd"></label>
+                <input id="pwd" class="box" type="password" placeholder="비밀번호를 입력해 주세요."></input>
+              </div>
+
+              <button>로그인</button>
+            </div>
+
+            <label for="remember"></label>
+            <input id="remember" type="checkbox" checked="checked">아이디 저장
+          </form>
+
+
+
+          <form action="#" id="tab2" class="cont">
+            
+            <div class="info" id="user_name">
+              <label><div>이름</div><input class="box" type="text" placeholder="이름을 입력해 주세요"></label>
+            </div>
+            
+            <div class="info" id="user_tel">
+              <label><div>휴대폰 번호</div><input class="box" type="tel" placeholder="휴대폰 번호(-생략)를 입력해 주세요"></label>
+            </div>
+
+            <div class="info" id="user_email">
+              <label>
+                <div>이메일</div>
+                <div>
+                  <input class="box" id="domainid" type="text">
+                  <span>@</span>
+                  <input class="box" id="domain_txt" type="text">
+                  <select class="box" id="domain_list">
+                    <option value="type">직접 입력</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="google.com">google.com</option>
+                    <option value="hanmail.com">hanmail.com</option>
+                    <option value="nate.com">nate.com</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+
+            <div class="info" id="birth">
+              <label>
+                <div>생년월일</div>
+                <div>
+                  <select class="box" id="year">
+                    <option disabled selected>출생연도</option>
+                  </select>
+                  <select class="box" id="month">
+                    <option disabled selected>월</option>
+                  </select>
+                  <select class="box" id="day">
+                    <option disabled selected>일</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+
+            <div class="info" id="user_id">
+              <label><div>아이디</div><input class="box" type="text" placeholder="아이디를 입력해 주세요."></label>
+            </div>
+
+            <div class="info" id="user_pwd1">
+              <label><div>비밀번호</div><input class="box" type="password" placeholder="비밀번호를 입력해 주세요."><div class="content">here</div></label>
+            </div>
+
+            <div class="info" id="user_pwd2">
+              <label><div>비밀번호 확인</div><input class="box" type="password" placeholder="비밀번호를 재입력해 주세요."><div class="content">here</div></label>
+            </div>
+
+
+            <button>회원가입</button>
+            
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!--login end-->
+
+    <div id="bottom_banner_wrapper">
+      <div id="bottom_banner">
+        <img src="./lotteCinema_img/bottom_banner/bottom_banner1.png">
+      </div>
+    </div>
+  
+    <footer>
+      <div id="footer_wrap">
+        <img src="./lotteCinema_img/logo/logo.png">
+        <ul>
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이메일무단수집거부</a></li>
+          <li><a href="#">영상정보처리기기 운영 및 관리방침</a></li>
+          <li><a href="#">배정기준</a></li>
+          <li><a href="#">채용안내</a></li>
+          <li><a href="#">광고/임대문의</a></li>
+          <li><a href="#">사회적책임</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">서울특별시 송파구 올림픽로 300 롯데월드타워 27층</a></li>
+          <li><a href="#">고객센처 1544-8855(유료)</a></li>
+        </ul>
+      </div>
+    </footer>
+  
+    <script src="./js/default.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>빠른 예매</title>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/63c5ea7601.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/default2.css">
+  <link rel="stylesheet" href="./css/rev.css">
+</head>
+<body>
+  <!-- 배너 -->
+  <div id="top_banner_wrapper">
+    <div id="top_banner"> <!-- 리스트에 넣고 랜덤으로 뜨게 -->
+      <img src="./lotteCinema_img/banner/A_Man_of_Reason_banner.jpg">
+      <span>&times</span>
+    </div>
+  </div>
+
+  <!-- 헤더(상단, 상단아래줄) -->
+  <header>
+    <div id="gnb_wrap">
+      <div id="logo"><a href="./index.html"><img src="lotteCinema_img/logo/logo.png"></a></div>
+      
+      <div id="gnb">
+        <ul id="gnb_sns">
+          <li><a href="#"><i class="fa-brands fa-facebook" style="color: #777777;"></i>페이스북</a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube" style="color: #777777;"></i>유튜브</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram" style="color: #777777;"></i></i>인스타그램</a></li>
+        </ul>
+        <ul id="gnb_login">
+          <li><a href="./login.html">로그인</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="nav">
+      <ul id="m_menu">
+        <li>
+          <a href="./rev.html">예매</a>
+          <ul class="drop">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">빠른예매</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./des.html">영화</a>
+          <ul class="drop">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">현재상영작</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./des.html">관람평</a>
+          <ul class="drop">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">관람평</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <ul id="r_menu">
+        <li><a href="#"><i class="fa-regular fa-user"></i>회원가입</a></li>
+        <li><a href="#"><i class="fa-solid fa-ticket"></i>바로 예매</a></li>
+        <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!--rev start-->
+
+  <main>
+    <section id="rev_wrapper">
+
+      <article class="cinema">
+        <div class="group_top">
+          <h3>영화관</h3>
+        </div>
+        <div class="inner">
+          <ul class="depth1">
+            <li>
+              <a href="#none">서울<em>(4)</em></a>
+              <ul class="depth2">
+                <li><a href="#none">가산디지털</a></li>
+                <li><a href="#none">가양</a></li>
+                <li><a href="#none">강동</a></li>
+                <li><a href="#none">건대입구</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">경기/인천<em>(5)</em></a>
+              <ul class="depth2">
+                <li><a href="#none">광명(광명사거리)</a></li>
+                <li><a href="#none">광주터미널</a></li>
+                <li><a href="#none">동탄</a></li>
+                <li><a href="#none">라페스타</a></li>
+                <li><a href="#none">별내</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="movie">
+        <div class="group_top">
+          <h3>영화</h3>
+        </div>
+        <div class="inner">
+
+          <div class="sort_select">
+            <select id="sort">
+              <option value="abc">가나다순</option>
+              <option value="release">개봉순</option>
+            </select>
+            <div class="sort_icon">
+              <ul>
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li><i class="fa-solid fa-border-all"></i></li>
+              </ul>
+            </div>
+          </div>
+
+          <ul>
+            <li><a href="#none">
+              <div class="title">
+                <h2><span class="num num_15">15</span>오펜하이머</h2>
+              </div>
+            </a></li>
+            <li><a href="#none">
+              <div class="title">
+                <h2><span class="num num_15">15</span>영화제목</h2>
+              </div>
+            </a></li>
+            
+          </ul>
+        </div>
+      </article>
+
+      <article class="date_time">
+        <div class="group_top">
+          <h3>날짜/시간</h3>
+        </div>
+        <div class="inner">
+
+          <div class="date_slide_wrap">
+            <div class="date_slide">
+              <div class="date_box_wrap">오늘</div>
+              <div class="date_box_wrap">내일</div>
+            </div>
+          </div>
+
+          <div class="filter">
+            <ul>
+              <li>전체
+                <div class="content">
+                  <div class="box">
+                    <div class="title">
+                      <h2><span class="num num_15">15</span>오펜하이머</h2>
+                    </div>
+                    <ul class="date">
+                      <li><a href="none">
+                        <p>17:30</p>
+                        <p><span><em>35</em>/72</span><span>4관</span></p>
+                      </a></li>
+                      <li><a href="none">
+                        <p>19:30</p>
+                        <p><span><em>92</em>/108</span><span>2관</span></p>
+                      </a></li>
+                    </ul>
+                  </div>
+                  
+                </div>
+              </li>
+              <li>13시 이후
+                <div class="content">
+                  날짜/시간
+                </div>
+              </li>
+              <li>19시 이후
+                <div class="content">
+                  날짜/시간
+                </div>
+              </li>
+              <li>심야
+                <div class="content">
+                  날짜/시간
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--rev end-->
+
+  <div id="bottom_banner_wrapper">
+    <div id="bottom_banner">
+      <img src="./lotteCinema_img/bottom_banner/bottom_banner1.png">
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer_wrap">
+      <img src="./lotteCinema_img/logo/logo.png">
+      <ul>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이메일무단수집거부</a></li>
+        <li><a href="#">영상정보처리기기 운영 및 관리방침</a></li>
+        <li><a href="#">배정기준</a></li>
+        <li><a href="#">채용안내</a></li>
+        <li><a href="#">광고/임대문의</a></li>
+        <li><a href="#">사회적책임</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">서울특별시 송파구 올림픽로 300 롯데월드타워 27층</a></li>
+        <li><a href="#">고객센처 1544-8855(유료)</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./js/default.js"></script>
+  <script src="./js/rev.js"></script>
+</body>
+</html>

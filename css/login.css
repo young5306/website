@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+main {
+  width: 100%;
+}
+main #login {
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.tab_menu .list {
+  width: 100%;
+  display: flex;
+}
+.tab_menu .list li {
+  width: 50%;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+.tab_menu .list li.is_on {
+  border-bottom: 1px solid #777;
+}
+.tab_menu .list li.is_on a {
+  color: #777;
+}
+
+.cont_area {
+  width: 100%;
+  background-color: #eee;
+  padding: 30px 0;
+}
+
+.cont {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: none;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.wrapper .wrap {
+  width: 70%;
+  margin-right: 10px;
+}
+.wrap .box {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #777;
+  font-size: 16px;
+  font-weight: bold;
+}
+.wrap .box:first-of-type {
+  margin-bottom: 10px;
+}
+.wrapper button {
+  width: 20%;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#tab2.cont {
+  width: 70%;
+}
+#tab2 .info label {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+#tab2 label > :nth-child(1) {
+  width: 20%;
+  text-align: right;
+  padding-right: 30px;
+}
+#tab2 label > :nth-child(2) {
+  width: 70%;
+}
+#tab2 label > input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#user_email input,
+#user_email select {
+  width: 31%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#birth select {
+  width: 32.5%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#user_pwd1 {
+  position: relative;
+}
+#user_pwd1 .content {
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: 180px;
+  font-size: 11px;
+  font-weight: bold;
+}
+#user_pwd2 {
+  position: relative;
+}
+#user_pwd2 .content {
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: 180px;
+  font-size: 11px;
+  font-weight: bold;
+}
+#tab2 button {
+  width: 50%;
+  color: #000;
+  background-color: #fff;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 50px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+#tab2 button:hover {
+  color: #fff;
+  background-color: #000;
+}
