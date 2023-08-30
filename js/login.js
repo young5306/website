@@ -16,7 +16,6 @@ for (let i = 0; i < tabList.length; i++) {
     document.querySelector(activeCount).style.display = "block";
   });
 }
-
 //도메인
 const domainListEl = document.querySelector("#domain_list");
 const domainInputEl = document.querySelector("#domain_txt");
